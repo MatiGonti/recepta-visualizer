@@ -7,16 +7,12 @@ import type {
   PrescriptionData,
 } from "./types";
 
-const HL7_NS = "urn:hl7-org:v3";
-const EXTPL_NS = "http://www.csioz.gov.pl/xsd/extPL/r2";
-
 const OID_PESEL = "2.16.840.1.113883.3.4424.1.1.616";
 const OID_PWZ_LEK = "2.16.840.1.113883.3.4424.1.6.2";
 const OID_PWZ_PIEL = "2.16.840.1.113883.3.4424.1.6.3";
 const OID_PWZ_FARM = "2.16.840.1.113883.3.4424.1.6.1";
 const OID_REGON = "2.16.840.1.113883.3.4424.2.2.1";
 const OID_NIP = "2.16.840.1.113883.3.4424.2.2.3";
-const OID_PRESCRIPTION_ID = "2.16.840.1.113883.3.4424.2.7.0.7.1";
 const OID_ACCESS_CODE = "2.16.840.1.113883.3.4424.0.12";
 const OID_NFZ_BRANCH = "2.16.840.1.113883.3.4424.3.1";
 
@@ -470,7 +466,7 @@ function parseSingleMedication(
     for (const t of translations) {
       const cs = t.getAttribute("codeSystem");
       if (cs === "2.16.840.1.113883.6.69" || cs?.includes("EAN") || cs?.includes("GTIN")) {
-        ean = t.getAttribute("code");
+        ean = t.getAttribute("code") || undefined;
       }
     }
   }
