@@ -1,0 +1,298 @@
+.prescription {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  border: 2px solid #1a365d;
+  border-radius: 4px;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #1a202c;
+  font-size: 13px;
+  line-height: 1.5;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.prescription-inner {
+  padding: 28px 32px;
+}
+
+/* Header */
+.prescription-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.prescription-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a365d;
+  letter-spacing: 0.5px;
+}
+
+.prescription-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  background: #ebf4ff;
+  color: #2b6cb0;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-left: 10px;
+  vertical-align: middle;
+  text-transform: lowercase;
+  font-style: italic;
+  letter-spacing: 0;
+}
+
+.prescription-type {
+  font-size: 11px;
+  color: #718096;
+  margin-top: 2px;
+}
+
+.header-right {
+  text-align: right;
+  font-size: 12px;
+}
+
+.issue-date,
+.expiry-date {
+  margin-bottom: 2px;
+}
+
+/* Divider */
+.prescription-divider {
+  border: none;
+  border-top: 1px solid #cbd5e0;
+  margin: 14px 0;
+}
+
+/* Parties: Patient & Doctor */
+.prescription-parties {
+  display: flex;
+  gap: 0;
+}
+
+.party {
+  flex: 1;
+  padding: 8px 0;
+}
+
+.party-separator {
+  width: 1px;
+  background: #cbd5e0;
+  margin: 0 20px;
+  flex-shrink: 0;
+}
+
+.party-header {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #718096;
+  margin-bottom: 6px;
+}
+
+.party-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a365d;
+  margin-bottom: 6px;
+}
+
+.party-detail {
+  font-size: 12px;
+  color: #4a5568;
+  margin-bottom: 2px;
+}
+
+.party-detail .label {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.pro-note {
+  margin-top: 6px;
+  font-style: italic;
+  color: #805ad5;
+  font-size: 11px;
+}
+
+.org-separator {
+  border-top: 1px dashed #e2e8f0;
+  margin: 8px 0;
+}
+
+.org-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 4px;
+}
+
+.org-parent {
+  font-style: italic;
+  color: #718096;
+  margin-bottom: 4px;
+}
+
+/* Medications */
+.medications-section {
+  min-height: 80px;
+}
+
+.medication-item {
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #2b6cb0;
+  border-radius: 3px;
+}
+
+.medication-item:last-child {
+  margin-bottom: 0;
+}
+
+.medication-header {
+  margin-bottom: 6px;
+}
+
+.rp-marker {
+  font-size: 15px;
+  font-weight: 700;
+  font-style: italic;
+  color: #1a365d;
+}
+
+.cito-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #c53030;
+  margin-left: 8px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.medication-body {
+  padding-left: 4px;
+}
+
+.medication-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 4px;
+}
+
+.nz-badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #c53030;
+  letter-spacing: 1px;
+}
+
+.medication-detail {
+  font-size: 12px;
+  color: #4a5568;
+  margin-bottom: 2px;
+}
+
+.medication-detail .label {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.medication-dosage {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #2d3748;
+  background: #edf2f7;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+.ds-marker {
+  font-weight: 700;
+  font-style: italic;
+  color: #1a365d;
+}
+
+.medication-reimbursement {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #4a5568;
+  padding: 4px 10px;
+  background: #ebf4ff;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.medication-reimbursement .label {
+  font-weight: 600;
+  color: #2b6cb0;
+}
+
+.no-medications {
+  text-align: center;
+  color: #a0aec0;
+  padding: 24px;
+  font-style: italic;
+}
+
+/* Footer */
+.prescription-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 11px;
+  color: #718096;
+}
+
+.footer-item .label {
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.template-id {
+  font-size: 10px;
+  color: #a0aec0;
+  word-break: break-all;
+}
+
+/* Print styles */
+@media print {
+  .prescription {
+    border: 1px solid #000;
+    box-shadow: none;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .prescription-inner {
+    padding: 20px;
+  }
+
+  .medication-item {
+    background: #f8f8f8 !important;
+    border-color: #999 !important;
+    border-left-color: #333 !important;
+  }
+
+  .medication-dosage {
+    background: #eee !important;
+  }
+
+  .medication-reimbursement {
+    background: #eee !important;
+  }
+}
